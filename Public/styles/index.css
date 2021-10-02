@@ -236,7 +236,7 @@
     }
 
     .logo {
-      display: none;
+      width: 25rem;
     }
   
     .profile-card {
@@ -248,14 +248,15 @@
     .profile-card h1 {
       font-family: Montserrat;
       font-size: 2rem;
-      text-align: center;
+      text-align: left;
   
       color: #003F63;
     }
     .profile-card p {
+      width: 20rem;
       font-family: Montserrat;
       font-size: 20px;
-      text-align: center;
+      text-align: left;
   
       color: #000000;
   
