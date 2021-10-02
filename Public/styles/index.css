@@ -122,16 +122,17 @@
     font-size: 65px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 5rem;
+    margin: 2.5rem 0rem;
     text-align: center;
   }
 
   .services .service-card {
-    width: 100vh;
+    width: 100%;
     height: auto;
+    padding: 0rem 3rem;
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
   }
 
   .services .service-card .service-card-text h2 {
@@ -142,9 +143,12 @@
   }
 
   .services .service-card .service-card-text {
-   width: 32rem;
-   height: auto;
-   margin-left: 7rem;
+   width: 35rem;
+   min-height: 16rem;
+   padding: 1rem 2rem;
+
+   background-color: #f1f1f1;
+   box-shadow: 0px 15px 50px rgba(10, 10, 10, 0.186);
   }
   
   .services .service-card .service-card-text p {
@@ -339,15 +343,15 @@
     }
 
     .services .service-card .service-card-text {
-      width: 32rem;
-      height: auto;
-      margin-left: 0rem;
+      width: 35rem;
+      min-height: 16rem;
+      padding: 1rem 0rem;
+      border-radius: 0rem 0rem .5rem .5rem;
     }
 
     .services .service-card img {
       width: 35rem;
       height: 15rem;
-      margin-bottom: 1.6rem;
     }
 
     .services .service-card .service-card-text h2 {
@@ -356,11 +360,10 @@
       text-align: center;
     }
     .services .service-card .service-card-text p {
-      width: 35rem;
+      width: 100%;
       color: #000000;
-      font-size: 20px;
+      font-size: 25px;
       text-align: center;
-      margin-left: 0rem;
     }
   
     .offer-section {
@@ -368,34 +371,39 @@
       height: auto;
       display: grid;
       align-items: center;
+      padding: 1rem 1rem;
       justify-content: center;
   
       background-color: #003F63;
     }
     .offer-section .left-card-offer {
-      width: 15rem; 
+      width: 100%;
     }
     .offer-section .left-card-offer h1 {
       font-family: Montserrat;
-      font-weight: 300;
+      font-weight: 600;
+      text-align: center;
     }
     .offer-section .left-card-offer p {
-      font-size: 20px;
+      font-size: 25px;
       font-family: Montserrat;
-      font-weight: 400;
-      width: 30rem;
+      font-weight: 500;
+      padding: .5rem 2rem;
+      text-align: center;
       margin-top: 15px;
   
       color: #F1F1F1;
     }
   
     .offer-section .offer-list-card {
-      width: 30rem;
+      width: 100%;
       height: auto;
     }
     .offer-section .offer-list-card h1 {
       font-family: Montserrat;
-      font-weight: 300;
+      font-weight: 600;
+      font-size: 35px;
+      text-align: center;
   
       color: #F2B138;
     }
@@ -403,10 +411,11 @@
     .offer-section .offer-list-card ul {
       font-family: Montserrat;
       font-weight: 300;
-      margin-top: 15px;
+      margin-top: 20px;
     }
     .offer-section .offer-list-card ul li {
       font-weight: 400;
       color: #F1F1F1;
+      text-align: center;
     }
   }
