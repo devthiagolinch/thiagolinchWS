@@ -12,53 +12,44 @@
 
   .header{
     width: 100%;
-    height: 550px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
   }
-.logo {
-    width: 35rem;
-    height: auto;
-  }
-  .header .blur-card {
-    width: auto;
-    height: auto;
-    justify-content: space-between;
+  .logo {
+    width: 30rem;
   }
 
-  .blur-card h2 {
+  .profile-card {
+    width: 30rem;
+    justify-content: center;
+  }
+
+  .profile-card h1 {
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 65px;
-    line-height: 110px;
-    
+    font-size: 3rem;
     align-items: left;
-    margin-bottom: 5px;
+    margin-top: 3rem;
 
     color: #003F63;
   }
-  .blur-card p {
-    width:545px;
+  .profile-card p {
+    width: 100%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 29px;
-
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 3rem;
 
     color: #000000;
 
   }
-  .blur-card button {
+  .profile-card button {
     width: 270px;
     height: 63px;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #F2B138;
 
     color: white;
@@ -66,7 +57,7 @@
     font-size: 30px;
     border-style: none;
   }
-  .blur-card a {
+  .profile-card a {
     width: 100%;
     height: 100%;
     color: white;
@@ -74,26 +65,10 @@
     font-size: 30px;
     text-decoration: none;
   }
-  .social-media {
-    left: 1385px;
-    top: 211px;
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .social-media .wpp, .facebook, .instagram {
-    font-size: 20px;
-    color: #555555;
-    margin-bottom: 20px;
-  }
-
   
   .percentage-content {
-    position: relative;
     width: 100%;
-    left: 0px;
-    top: 0px;
-    padding: 30px 15px;
+    padding: 3rem 2rem;
     align-items: center;
     justify-content: center;
 
@@ -135,9 +110,11 @@
     margin-top: 15px;
   }
   .services {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: auto;
-    padding-top: 55px;
   }
 
   .services h1 {
@@ -145,32 +122,31 @@
     font-size: 65px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 80px;
+    margin-top: 5rem;
     text-align: center;
   }
 
   .services .service-card {
-    width: 100%;
-    height: 30rem;
+    width: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 15px;
-    margin-top: 20px;
+    margin-bottom: 2rem;
   }
 
-  .services .service-card .service-card-text {
-   align-items: center;
-   justify-content: space-around;
-   width: 32rem;
-   height: auto;
-  }
   .services .service-card .service-card-text h2 {
     color: #353D40;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
   }
+
+  .services .service-card .service-card-text {
+   width: 32rem;
+   height: auto;
+   margin-left: 7rem;
+  }
+  
   .services .service-card .service-card-text p {
     width: 32rem;
     height: auto;
@@ -182,10 +158,11 @@
     text-align: left;
   }
   .services .service-card img {
-    width: 35rem;
-    margin-left: -30px;
-
-    box-shadow: 0px 10px 50px rgba(39, 39, 39, 0.26);
+    width: 45rem;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 15px 50px rgba(10, 10, 10, 0.446);
   }
 
   .offer-section {
@@ -217,7 +194,7 @@
     width: 40rem;
     margin-top: 15px;
 
-    color: #FFFFFF;
+    color: #F1F1F1;
   }
 
   .offer-section .offer-list-card {
@@ -242,133 +219,75 @@
   .offer-section .offer-list-card ul li {
     margin-left: 25px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #F1F1F1;
   }
 
-  @media (max-width: 858px){
-    .header{
-      width: 100%;
-      height: 550px;
-    }
-  
-    .blur-card {
-      position: absolute;
-      height: 130px;
-      width: 480px;
-      left: 0px;
-      top: 360px;
-      padding: 30px;
-  
-     
-      background-color: #aaaaaa54;
-      backdrop-filter: blur(40px);
-      /* Note: backdrop-filter has minimal browser support */
-      
-      border-radius: 0px 32px 32px 0px;  
-    }
-  
-    .blur-card h2 {
-      font-family: 'Roboto', sans-serif;
-      color: white;
-      font-weight: 700;
-      text-align: left;
-      margin-bottom: 2px;
-      width: 100%;
-      height: 30px;
-    }
-    .blur-card p {
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      margin-top: 15px;
-      text-align: left;
-    }
-    .percentage-content {
-      width: 100%;
-      height: 400px;
-      left: 0px;
-      position: relative;
-      margin-top: -50px;
-      margin-bottom: -50px;
-      padding: 10px 15px;
+  @media (max-width: 425px) {
+    .header {
+      width: 100vh;
+      height: auto;
+      padding: 3rem 0rem;
       align-items: center;
       justify-content: center;
-  
-      background: linear-gradient(101.57deg, #0540B9 -8.1%, #99B5FA 138.33%);
-      border-radius: 40px;
     }
-    .percentage-content h1{
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      font-size: 32px;
-      margin-top: 15px;
+
+    .logo {
+      display: none;
     }
   
-    .percentage-content .percentage-cards {
-      display: flex;
-      justify-content: space-evenly;
+    .profile-card {
+      display: grid;
       align-items: center;
+      justify-content: center;
     }
-    .percentage-content .percentage-cards .percentage {
-      width: 20rem;
-      height: 18rem;
-      align-items: center;
-      margin-top: 35px;
-    }
-    .percentage-content .percentage-cards .percentage h3 {
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
+  
+    .profile-card h1 {
+      font-family: Montserrat;
+      font-size: 2rem;
       text-align: center;
-      font-size: 40px;
+  
+      color: #003F63;
     }
-    .percentage-content .percentage-cards .percentage p {
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
+    .profile-card p {
+      font-family: Montserrat;
+      font-size: 20px;
       text-align: center;
-      font-size: 15px;
-      line-height: 20px;
+  
+      color: #000000;
+  
+    }
+    .profile-card button{
       width: 10rem;
-      margin-top: 10px;
+      background-color: #F2B138;
+      padding: .6rem;
     }
-    .services{
+    .profile-card button a{
+      font-family: Montserrat;
+      font-size: 25px;
+    }
+    .profile-card a {
       width: 100%;
-      height: 650px;
-      padding-top: 55px;
-    }
-  }
-  @media (max-width: 425px){
-    .blur-card{
-      display: none;
-      width: 0%;
-      height: 0%;
+      height: 100%;
+      color: white;
+      font-family: Montserrat;
+      font-size: 30px;
+      text-decoration: none;
     }
 
-    .header {
-      width: 100%;
-      height: 35rem;
-    }
     .percentage-content {
-      width: 100%;
-      height: 65rem;
-      left: 0px;
-      position: relative;
-      margin-top: -50px;
-      margin-bottom: -50px;
-      padding: 35px 55px;
+      display: grid;
+      width: 100vh;
+      height: auto;
       align-items: center;
-      justify-content: center;
+      justify-content:space-around;
+      padding: 0rem 3rem;
   
-      background: linear-gradient(90.57deg, #21489d -20%, #5d6d96 138.33%);
-      border-radius: 40px;
+      background: #003F63;
     }
     .percentage-content h1{
-      color: #FFFFFF;
+      color: #F1F1F1;
       font-family: 'Roboto', sans-serif;
       text-align: center;
-      font-size: 30px;
     }
   
     .percentage-content .percentage-cards {
@@ -377,160 +296,117 @@
       align-items: center;
     }
     .percentage-content .percentage-cards .percentage {
-      width: 20rem;
-      height: 13rem;
+      width: 100%;
+      height: auto;
+      display: grid;
       align-items: center;
-      justify-content: space-between;
-      margin-top: 30px;
+      justify-content: center;
+      margin-bottom: 2rem;
     }
     .percentage-content .percentage-cards .percentage h3 {
-      color: #FFFFFF;
+      color: #F2B138;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       text-align: center;
-      font-size: 40px;
     }
     .percentage-content .percentage-cards .percentage p {
-      color: #FFFFFF;
+      color: #F1F1F1;
       font-family: 'Roboto', sans-serif;
+      line-height: 1.9rem;
       text-align: center;
-      font-size: 20px;
-      width: 100%;
-      margin-top: 10px;
-    }
-    .services{
-      width: 100%;
-      height: 650px;
-      padding-top: 55px;
-    }
-  }
-  @media (max-width: 375px){
-    .blur-card{
-      display: none;
-      width: 0%;
-      height: 0%;
+      font-size: 25px;
     }
 
-    .header {
-      width: 100%;
-      height: 35rem;
+    .services{
+      width: 100vh;
+      display: grid;
     }
-    .percentage-content {
+  
+    .services h1 {
+      color: #003F63;
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+
+      margin-bottom: 3rem;
+    }
+  
+    .services .service-card {
       width: 100%;
-      height: 65rem;
-      left: 0px;
-      position: relative;
-      margin-top: -50px;
-      margin-bottom: -50px;
-      padding: 35px 20px;
+      height: auto;
+      display: grid;
+      margin-bottom: 3rem;
+    }
+
+    .services .service-card .service-card-text {
+      width: 32rem;
+      height: auto;
+      margin-left: 0rem;
+    }
+
+    .services .service-card img {
+      width: 35rem;
+      height: 15rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .services .service-card .service-card-text h2 {
+      color: #353D40;
+      font-weight: 700;
+      text-align: center;
+    }
+    .services .service-card .service-card-text p {
+      width: 35rem;
+      color: #000000;
+      font-size: 20px;
+      text-align: center;
+      margin-left: 0rem;
+    }
+  
+    .offer-section {
+      width: 100vh;
+      height: auto;
+      display: grid;
       align-items: center;
       justify-content: center;
   
-      background: linear-gradient(90.57deg, #21489d -20%, #5d6d96 138.33%);
-      border-radius: 40px;
+      background-color: #003F63;
     }
-    .percentage-content h1{
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      font-size: 30px;
+    .offer-section .left-card-offer {
+      width: 15rem; 
     }
-  
-    .percentage-content .percentage-cards {
-      display: grid;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .percentage-content .percentage-cards .percentage {
-      width: 20rem;
-      height: 13rem;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 30px;
-    }
-    .percentage-content .percentage-cards .percentage h3 {
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
+    .offer-section .left-card-offer h1 {
+      font-family: Montserrat;
       font-weight: 300;
-      text-align: center;
-      font-size: 40px;
     }
-    .percentage-content .percentage-cards .percentage p {
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
+    .offer-section .left-card-offer p {
       font-size: 20px;
-      width: 100%;
-      margin-top: 10px;
-    }
-    .services{
-      width: 100%;
-      height: 650px;
-      padding-top: 55px;
-    }
-  }
-  @media (max-width: 370px){
-    .blur-card{
-      display: none;
-      width: 0%;
-      height: 0%;
-    }
-
-    .header {
-      width: 100%;
-      height: 35rem;
-    }
-    .percentage-content {
-      width: 100%;
-      height: 65rem;
-      left: 0px;
-      position: relative;
-      margin-top: -50px;
-      margin-bottom: -50px;
-      padding: 35px 15px;
-      align-items: center;
-      justify-content: center;
+      font-family: Montserrat;
+      font-weight: 400;
+      width: 30rem;
+      margin-top: 15px;
   
-      background: linear-gradient(90.57deg, #21489d -20%, #5d6d96 138.33%);
-      border-radius: 40px;
-    }
-    .percentage-content h1{
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      font-size: 30px;
+      color: #F1F1F1;
     }
   
-    .percentage-content .percentage-cards {
-      display: grid;
-      justify-content: space-between;
-      align-items: center;
+    .offer-section .offer-list-card {
+      width: 30rem;
+      height: auto;
     }
-    .percentage-content .percentage-cards .percentage {
-      width: 20rem;
-      height: 13rem;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 30px;
-    }
-    .percentage-content .percentage-cards .percentage h3 {
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
+    .offer-section .offer-list-card h1 {
+      font-family: Montserrat;
       font-weight: 300;
-      text-align: center;
-      font-size: 40px;
+  
+      color: #F2B138;
     }
-    .percentage-content .percentage-cards .percentage p {
-      color: #FFFFFF;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      font-size: 20px;
-      width: 100%;
-      margin-top: 10px;
+  
+    .offer-section .offer-list-card ul {
+      font-family: Montserrat;
+      font-weight: 300;
+      margin-top: 15px;
     }
-    .services{
-      width: 100%;
-      height: 650px;
-      padding-top: 55px;
+    .offer-section .offer-list-card ul li {
+      font-weight: 400;
+      color: #F1F1F1;
     }
   }
